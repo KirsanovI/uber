@@ -1,0 +1,356 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+            .menu_link
+                font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .causes
+        &_item
+            align-items: start
+            .causes_descr
+                width: 300px
+    .mobile
+        &_item
+            width: 300px
+    .footer
+        &_stores
+            display: flex
+            flex-direction: column
+            top: 17px
+            a
+                margin-top: 10px
+@media (max-width: 991.5px)
+    .menu
+        &_item
+            padding-right: 8px
+            .menu_link
+                font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            width: 100%
+            height: 40px
+            margin-top: 21px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .causes
+        &_item
+            flex-direction: column
+            align-items: center
+        &_descr
+            margin-top: 20px
+    .uberX
+        img
+            width: 90%
+            margin-top: 113px
+    .footer
+        &_icons
+            width: 75px
+            flex-wrap: wrap
+            top: 30px            
+            a
+                margin-top: 10px
+@media (max-width: 767.5px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        .menu_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translate(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            font-weight: 400
+            font-size: 16px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            line-height: 45px
+        &_btn
+            margin-top: 50px
+    .causes
+        .title
+            font-size: 25px
+    .mobile
+        .title
+            font-size: 25px
+    .uberX
+        height: 400px
+        img
+            margin-top: 45px
+        .title
+            font-size: 25px
+    .uberX_subsection
+        height: 250px
+        &_text
+            padding-top: 134px
+    .require
+        .title
+            font-size: 25px
+    .world
+        .title
+            font-size: 25px
+    .footer
+        min-height: 275px
+        &_icons
+            width: 154px
+            position: relative
+            margin: 0 auto
+            margin-top: 20px
+            margin-bottom: 19px
+            top: 0
+            left: 0
+            flex-wrap: nowrap
+        &_stores
+            display: inline-block
+            top: auto
+            right: 50%
+            transform: translateX(50%)         
+            bottom: 30px
+            width: 300px
+            flex-direction: row
+
+@media (max-width: 575.5px)
+    nav
+        height: 32px
+    .menu
+        width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &_link
+            display: block
+    .subheader
+        top: 30px
+        height: 62px
+        &_official
+            display: none
+        &_logo
+            margin-top: 18px
+        &_phone
+            font-weight: 400
+            font-size: 12px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+            &:hover
+                background-image: linear-gradient(to top, $color_azure 0%, #4ce2ff 100%)
+    .promo
+        min-height: 400px
+        padding: 73px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            margin-top: 61px
+            padding: 0 24px
+            font-weight: 900
+            font-size: 30px
+            line-height: 35px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+        &_subheader
+            margin-top: 34px
+            padding: 10px
+            font-weight: 700
+            font-size: 20px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+            &:hover
+                background-image: linear-gradient(to top, $color_azure 0%, #4ce2ff 100%)
+    .causes
+        padding: 20px 0 38px 0
+        &_item
+            margin-top: 26px
+            .causes_round
+                width: 100px
+                height: 100px
+            .causes_descr
+                margin-top: 27px
+                width: 100%
+                min-height: 82px
+                .causes_span
+                    font-size: 16px
+        .title
+            font-size: 16px
+            margin-top: 15px
+            line-height: 16px
+    .mobile
+        padding: 25px 0 12px 0
+        .title
+            margin-top: 15px
+            font-size: 16px
+        .subtitle
+            margin-top: 9px
+            font-size: 14px
+        .row
+            margin-top: 27px
+        &_item
+            width: 290px
+            height: 254px
+            padding-top: 80px
+            margin-bottom: 30px
+            &_subtitle
+                padding: 0 46px 0 46px
+                font-size: 18px
+            &_plus
+                top: auto
+                bottom: 21px
+    .uberX
+        padding-top: 25px
+        .title
+            display: none
+        .subtitle
+            display: none
+        img
+            margin-top: 34px
+            width: 300px
+        &_subsection_text
+            padding-top: 0
+            margin-top: 23px
+            color: #FFFFFF
+    .es-hidden
+        display: none
+    .es-visible
+        display: block
+    .require
+        padding: 24px 0 30px 0
+        .title
+            margin-top: 14px
+            font-size: 16px
+            line-height: 16px
+        &_block
+            margin: 30px 0 0 0
+            .require_title
+                font-size: 16px
+            .require_list
+                margin: 0
+                padding-left: 33px
+                li
+                    margin-bottom: 0
+                    font-size: 14px
+                    line-height: 21px
+            .require_descr
+                margin-top: 15px
+                font-size: 14px
+                line-height: 16px
+    .world
+        padding: 26px 0 0 0
+        min-height: 360px
+        background-image: url(../img/world_bg_320.jpg)
+        .title
+            margin-top: 14px
+            font-size: 16px
+            line-height: 16px
+        .subtitle
+            margin-top: 11px
+            font-size: 14px
+            line-height: 21px
+        a
+            margin-top: 211px
+            font-size: 15px
+    .footer
+        padding-top: 24px
+        min-height: 254px
+        &_header
+            margin-top: 21px
+            width: 280px
+            font-size: 14px
+            line-height: 14px
+        &_subheader
+            margin-top: 10px
+            width: 245px
+            min-height: 31px
+            flex-wrap: wrap
+            align-content: space-between
+            font-size: 11px
+            line-height: 11px
+        &_language
+            margin-top: 10px
+            font-size: 11px
+            line-height: 11px
+        &_icons
+            margin-top: 16px
+        &_stores
+            width: 262px
+            height: 24px
+            bottom: 19px
+            img
+                height: 100%
+
